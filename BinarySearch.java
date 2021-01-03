@@ -8,5 +8,11 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class BinarySearch {
+  public static int searching(List<Integer> inputArray, int numIn) {
+    
+    int lowerBound = 0;
+    int upperBound = (inputArray.size() - 1);
+    int middleValue;
+  }
 
 }
