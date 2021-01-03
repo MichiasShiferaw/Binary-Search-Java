@@ -73,3 +73,20 @@ public class BinarySearch {
   /**
   * opening for main. 
   */
+  public static void main(String[] args) throws IOException {
+    
+    //uses the binarySearch function to search
+    InputStreamReader r = new InputStreamReader(System.in); 
+    BufferedReader br = new BufferedReader(r);
+    Scanner inputter = new Scanner(System.in);
+    //Declare varaible
+    String verify = null; 
+    String checker = null;
+    String options = null;
+    int numIn = 0;
+    int max = 250;
+    
+    //create 3 array list for..
+    List<Integer> randListorg = new ArrayList<>(); // the original rand output
+    List<Integer> sortedList = new ArrayList<>(); // the sorted list
+    List<Integer> randList = new ArrayList<>(); // the new adjusted list
