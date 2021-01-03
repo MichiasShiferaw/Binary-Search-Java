@@ -68,4 +68,8 @@ public class BinarySearch {
     }
       
     return sortedList;
-}
+ } //closing for sorted method
+  
+  /**
+  * opening for main. 
+  */
