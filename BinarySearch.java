@@ -40,6 +40,9 @@ public class BinarySearch {
     //if reach here, no values are in the list
     //so return '-1'
     return -1;
-  }
-
+  } //closing for searching
+    
+  /**
+  * opening for sort method .
+  */
 }
