@@ -13,6 +13,13 @@ public class BinarySearch {
     int lowerBound = 0;
     int upperBound = (inputArray.size() - 1);
     int middleValue;
+    
+    while (lowerBound <= upperBound) {
+      //while range is valid and exists
+      //check halves for number 
+      
+      int middlePoint = (int) Math.round((upperBound + lowerBound) / 2);
+      middleValue = inputArray.get(middlePoint);    
   }
 
 }
