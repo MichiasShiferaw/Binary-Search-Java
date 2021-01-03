@@ -45,4 +45,9 @@ public class BinarySearch {
   /**
   * opening for sort method .
   */
+  
+  public static List<Integer> sortList(List<Integer> inputArray) {
+    //Sorts the unsorted list and assigns the result to return a sorted list
+
+    List<Integer> sortedList = new ArrayList<>();
 }
