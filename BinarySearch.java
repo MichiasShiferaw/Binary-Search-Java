@@ -20,6 +20,26 @@ public class BinarySearch {
       
       int middlePoint = (int) Math.round((upperBound + lowerBound) / 2);
       middleValue = inputArray.get(middlePoint);    
+      
+      //if input is at middleValue
+      if (numIn == middleValue) {
+        return middlePoint; //this breaks the 'while' and the 'searching'
+        
+      } else if (numIn > middleValue) {
+        //if input is greater than middleValue
+        //ignore left half(numbers less than the middle)
+        lowerBound = middlePoint + 1; //not including mid
+        
+      } else if (numIn < middleValue) {
+        //if input is less than middleValue
+        //ignore right half(numbers greater than the middle)
+        upperBound = middlePoint - 1; //not including mid
+      } // closing for if statement
+    } //closing for while
+      
+    //if reach here, no values are in the list
+    //so return '-1'
+    return -1;
   }
 
 }
