@@ -50,4 +50,22 @@ public class BinarySearch {
     //Sorts the unsorted list and assigns the result to return a sorted list
 
     List<Integer> sortedList = new ArrayList<>();
+    
+    Integer minima = 0; //default is 0
+      
+    for (int count = 0;count < inputArray.size();) {
+      //check all values of input array 
+      minima = inputArray.get(0); //set as new smallest number
+      for (int current: inputArray) {
+        //search for the smallest value in input array and restate it as such
+        //if the value is less than the smallest value, set it to new smallest value
+        //inspiration from http://www.cafeaulait.org/course/week2/43.html
+        minima = (current < minima) ? current : minima; 
+      }
+    
+      sortedList.add(minima); //add to sortedList
+      inputArray.remove(minima); //remove the small value from input array
+    }
+      
+    return sortedList;
 }
