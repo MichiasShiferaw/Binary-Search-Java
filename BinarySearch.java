@@ -156,3 +156,9 @@ public class BinarySearch {
             System.out.println("Please try again and enter an integer!");
 
           }      
+        } while (validiate != false); //continue to loop while the value is not false
+        
+        randList.add(newAdd);
+        //sort
+        sortedList = sortList(randList); //sorts list from least to greatest 
+        System.out.print("\nADUSTED ORDERED LIST :\n" + sortedList + "\n");
