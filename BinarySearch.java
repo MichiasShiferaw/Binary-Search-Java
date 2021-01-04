@@ -96,4 +96,12 @@ public class BinarySearch {
     //output 250 random numbers
     for (int count = 0; count < max; count++) {      
     
+      //add random number ranging from 0 to 600
+      int randNum = new Random().nextInt(601);
+      System.out.print(randNum + " "); //output for display
+      //add each value to both of the randList
+      randList.add(randNum);
+      randListorg.add(randNum);
+    }    
     
+    sortedList = sortList(randListorg); //sorts the original list from least to greatest
