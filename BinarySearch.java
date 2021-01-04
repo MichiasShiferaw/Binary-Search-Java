@@ -116,3 +116,21 @@ public class BinarySearch {
     while (finished == false) {
       //while the user has not decided to leave the program
       boolean checking = false;
+      do {
+        System.out.println("N : insert new value \nS : search for value \nE : exit program");
+        String optionfilt = br.readLine();
+        options = (optionfilt.toUpperCase());
+
+        if ((options.equals("N")) || (options.equals("S"))) {
+          checking = false;
+        } else if (options.equals("E")) {
+          System.out.println("BYE BYE!");//farewell to the user
+          System.exit(0);//close application
+        } else {
+           
+          System.out.println("Your input was not sufficient enough. Please try again.");
+             
+          checking = true;
+        }
+           
+      } while (checking != false);//continue to loop while the value is not false
