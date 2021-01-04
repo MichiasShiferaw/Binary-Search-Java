@@ -162,9 +162,8 @@ public class BinarySearch {
         //sort
         sortedList = sortList(randList); //sorts list from least to greatest 
         System.out.print("\nADUSTED ORDERED LIST :\n" + sortedList + "\n");
-        } while (validiate != false); //continue to loop while the value is not false
-        
-        randList.add(newAdd);
-        //sort
-        sortedList = sortList(randList); //sorts list from least to greatest 
-        System.out.print("\nADUSTED ORDERED LIST :\n" + sortedList + "\n");
+      } else if (options.equals("S")) {
+        //String verify = null;
+        System.out.println("Please enter the integer you want to find here:!");
+       
+        boolean validiate2 = false; 
