@@ -179,4 +179,17 @@ public class BinarySearch {
             System.out.println("Sorry this is not an integer");
             System.out.println("Please try again and enter an integer you want to find!");
           }
-        } while (validiate2 != false); //continue to loop while the value is not false        
+        } while (validiate2 != false); //continue to loop while the value is not false  
+     
+        
+        
+        int looking = searching(sortedList, numIn);//search value
+        
+        if (looking == -1) {
+          //not in the list
+          System.out.println("\nNumber is not in display!");
+        } else {
+          //the input is in the list
+          System.out.println("\n" + numIn + " is at " + looking + " index!");
+        }
+      }        
