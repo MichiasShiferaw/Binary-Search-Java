@@ -110,4 +110,9 @@ public class BinarySearch {
     System.out.print("\nORDERED LIST:\n" + sortedList + "\n");
       
     //see if user wants to input a value or search
-    System.out.println("-----------------------------------------------"); 
+    System.out.println("-----------------------------------------------");
+    
+    boolean finished = false;
+    while (finished == false) {
+      //while the user has not decided to leave the program
+      boolean checking = false;
