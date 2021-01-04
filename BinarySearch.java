@@ -193,3 +193,23 @@ public class BinarySearch {
           System.out.println("\n" + numIn + " is at " + looking + " index!");
         }
       }        
+
+      
+      //need to reset to default
+      options = ""; 
+      verify = "";
+      checker = "";
+      //numIn = "";
+      numIn = 0;
+      
+      System.out.println("WANT TO CONTINUE(Y/N)");//ask if the user would like to continue
+      String another = null;
+      another = inputter.next();
+
+      if ((another.equals("N")) || (another.equals("n"))) {
+        finished = true;//we dont want to continue
+        System.out.println("Bye bye!");
+      }
+    } //closing for the 'finished' while loop
+  } //closing for main
+} //closing for BinarySearch      
