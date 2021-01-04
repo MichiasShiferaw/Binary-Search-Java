@@ -134,3 +134,25 @@ public class BinarySearch {
         }
            
       } while (checking != false);//continue to loop while the value is not false
+         
+      //int newAdd = "";
+      int newAdd = 0;
+                  
+      //closing for get number
+      if (options.equals("N")) {
+        //insert value
+        boolean validiate = false;
+        System.out.println("Please enter an integer!");
+        do { 
+          try {
+            //check if response is an integer
+            //insert value
+            verify = br.readLine();
+            newAdd = Integer.parseInt(verify);
+            validiate = false;
+          } catch (IllegalArgumentException x) { 
+            validiate = true;
+            System.out.println("Your input was not an integer!");
+            System.out.println("Please try again and enter an integer!");
+
+          }      
