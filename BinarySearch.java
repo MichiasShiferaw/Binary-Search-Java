@@ -167,3 +167,16 @@ public class BinarySearch {
         System.out.println("Please enter the integer you want to find here:!");
        
         boolean validiate2 = false; 
+
+        do {
+          try {
+            //check if response is an integer
+            checker = br.readLine();
+            validiate2 = false;
+            numIn = Integer.parseInt(checker);
+          } catch (IllegalArgumentException x) { 
+            validiate2 = true;
+            System.out.println("Sorry this is not an integer");
+            System.out.println("Please try again and enter an integer you want to find!");
+          }
+        } while (validiate2 != false); //continue to loop while the value is not false        
