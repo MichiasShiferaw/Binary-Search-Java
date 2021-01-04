@@ -90,3 +90,10 @@ public class BinarySearch {
     List<Integer> randListorg = new ArrayList<>(); // the original rand output
     List<Integer> sortedList = new ArrayList<>(); // the sorted list
     List<Integer> randList = new ArrayList<>(); // the new adjusted list
+    
+    
+    System.out.println("Random Output:");
+    //output 250 random numbers
+    for (int count = 0; count < max; count++) {      
+    
+    
