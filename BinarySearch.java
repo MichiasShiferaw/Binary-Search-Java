@@ -105,3 +105,9 @@ public class BinarySearch {
     }    
     
     sortedList = sortList(randListorg); //sorts the original list from least to greatest
+      
+    System.out.println("");
+    System.out.print("\nORDERED LIST:\n" + sortedList + "\n");
+      
+    //see if user wants to input a value or search
+    System.out.println("-----------------------------------------------"); 
